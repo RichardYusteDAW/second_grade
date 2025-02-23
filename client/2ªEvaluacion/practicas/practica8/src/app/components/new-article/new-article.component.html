@@ -1,0 +1,26 @@
+<form>
+    <div class="form-group">
+        <label for="id">Id</label>
+        <input type="text" class="form-control" name="id" placeholder="Enter id" [(ngModel)]="article.id">
+    </div>
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" name="nombre" placeholder="Enter nombre" [(ngModel)]="article.name">
+    </div>
+    <div class="form-group">
+        <label for="descripcion">Descripcion</label>
+        <input type="text" class="form-control" name="descripcion" placeholder="Enter descripcion"
+            [(ngModel)]="article.description">
+    </div>
+    <div class="form-group">
+        <label for="unidades">Unidades</label>
+        <input type="text" class="form-control" name="unidades" placeholder="Enter unidades"
+            [(ngModel)]="article.units">
+    </div>
+    <div class="form-group">
+        <label for="precio">Precio</label>
+        <input type="text" class="form-control" name="precio" placeholder="Enter precio" [(ngModel)]="article.price">
+    </div>
+    <button class="btn btn-primary mt-2" (click)="createArticle()">Guardar</button>
+    <button class="btn btn-danger mt-2 ms-2" routerLink="/articles">Cancelar</button>
+</form>
